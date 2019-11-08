@@ -14,10 +14,13 @@ class App extends Component {
   }
   
   render() {
+
     return (
       <div className="App">
         <UserInput username={this.state.username} captureUsername={this.usernameEntryHandler}/>
         <UserOutput username={this.state.username} />
+        <UserOutput username="older" />
+        <UserOutput username="oldest" />
       </div>
     );
   }
